@@ -1,0 +1,13 @@
+
+system("./y_bed_corner.rb")
+watch( 'y_bed_corner.rb' )  {|md|
+   system("./y_bed_corner.rb")
+}
+
+watch( 'lib/(.*).rb' )  {|md|
+   system("./y_bed_corner.rb")
+}
+
+watch( 'lib/*/(.*).rb' )  {|md|
+   system("./y_bed_corner.rb")
+}
